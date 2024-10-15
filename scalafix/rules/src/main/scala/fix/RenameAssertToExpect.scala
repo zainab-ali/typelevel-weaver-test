@@ -6,7 +6,7 @@ import scala.meta._
 class RenameAssertToExpect extends SemanticRule("RenameAssertToExpect") {
 
   override def fix(implicit doc: SemanticDocument): Patch = {
-    Patch.replaceSymbols("weaver.Expectations.Helpers.assert" -> "expect")
+    Patch.replaceSymbols()
   }
 
 }
